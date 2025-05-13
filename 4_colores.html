@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Funciones color</title>
+</head>
+<body>
+  <section style="display: flex; align-items: center; flex-direction: column;">
+  <div id="color1" style="width:88rem; height:190px; background-color:#5b1647;"></div>
+  <div id="color2" style="width:88rem; height:190px; background-color:#92063e;"></div>
+  <div id="color3" style="width:88rem; height:190px; background-color:#d63a63;"></div>
+  <div id="color4" style="width:88rem; height:190px; background-color:#fe5627;"></div>
+</section>
+
+
+
+  <script>
+    const colores = ['color1', 'color2', 'color3', 'color4'];
+    colores.forEach(color => {
+      const div = document.getElementById(color);
+      div.addEventListener('click', function() {
+        this.style.backgroundColor = 'red';
+      });
+    });
+  </script>
+</body>
+</html>
